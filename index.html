@@ -10,30 +10,33 @@
 <body>
     <div class="container">
         <header>
-            <div class="head1">
-                <form action="/action_page.php" method="get">
-                    <input type="image" class="button" name="submit" src="./images/search.png" alt="Submit"/>
-                    <input type="text" id="search" name="search">
-                </form>
-                <div class="header_buttons">
-                    <input type="image" class="button" src="./images/bell.png" alt="Notifications"/>
-                    <input type="image" class="button" src="./images/account.png" alt="ProfilePicture"/>
-                    <button class="button" id="name">Alan Perng</button>
+            <form action="/action_page.php" method="get">
+                <input type="image" class="button" name="submit" src="./images/search.png" alt="Submit"/>
+                <input type="text" id="search" name="search" autocomplete="off">
+            </form>
+            
+            <div class="header_buttons">
+                <div class="header_buttons2">
+                    <button class="button, B2">New</button>
+                    <button class="button, B2">Upload</button>
+                    <button class="button, B2">Share</button>
                 </div>
 
-            </div>
-
-            <div class="head2">
-
+                <div class="header_buttons1">
+                    <input type="image" class="button" src="./images/bell.png" alt="Notifications"/>
+                    <input type="image" class="button" src="./images/account.png" alt="ProfilePicture"/>
+                    <button class="button, name" id="name">Alan Perng</button>
+                </div>
             </div>
         </header>
 
 
         <div class="sidebar">
-            <h2>
+            <div id="hiThere">
                 <img src="images/snowboard.png" alt="snowboard">
-                Dashboard
-            </h2>
+                <span class="name" style="font-size: 20px; font-weight: bold"></span>
+            </div>
+
             <ul>
                 <li class="sideButton, button"><img src="./images/home.png" alt="Home">Home</li>
                 <li class="sideButton, button"><img src="">Profile</li>
