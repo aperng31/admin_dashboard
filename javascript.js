@@ -1,7 +1,6 @@
 
-const sidebarClick = document.querySelectorAll('.sideButton');
+const sidebarClick = document.querySelectorAll('.button');
 
-console.log(sidebarClick);
 sidebarClick.forEach(elem => elem.addEventListener('mousedown', mdown));
 sidebarClick.forEach(elem => elem.addEventListener('mouseup', mup));
 
