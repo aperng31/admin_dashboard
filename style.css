@@ -23,7 +23,7 @@ header {
     gap: 20px;
     justify-content: space-between;
     align-items: center;    
-    background-color: aquamarine;
+    background-color: #2dd4bf;
     border-radius: 16px;
 }
 header > form {
@@ -51,8 +51,8 @@ input[type=text] {
     gap: 12px;
 
     align-items: center;
-    border: 2px solid aquamarine;
-    /* padding: 8px; */
+    border: 2px solid #2dd4bf;
+
 }
 #name {
     background-color: transparent;
@@ -67,7 +67,7 @@ input[type=text] {
     cursor: pointer;
 }
 .header_buttons1 > .button {
-    border: 2px solid aquamarine;
+    border: 2px solid #2dd4bf;
     padding: 6px;
     box-sizing: border-box;
 }
@@ -92,8 +92,8 @@ input[type=text] {
     font-size: 14px;
     font-weight: bold;
     color: aliceblue;
-    border: 2px solid aquamarine;
-    background-color: aquamarine;
+    border: 2px solid #2dd4bf;
+    background-color: #2dd4bf;
 }
 .header_buttons2 > .B2:hover {
     border: 2px solid aliceblue;
@@ -107,7 +107,7 @@ input[type=text] {
     grid-column: 1 / 2;
     grid-row: 1 / -1;
 
-    background-color: #5b21b6;
+    background-color: #6d28d9;
     border-radius: 16px;
 
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -162,7 +162,7 @@ input[type=text] {
 
 .main {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 3fr 265px;
     grid-template-rows: 300px 1fr;
 
     grid-column: 2 / -1;
