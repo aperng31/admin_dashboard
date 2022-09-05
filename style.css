@@ -9,7 +9,7 @@ body{
     width: 100%;
     display: grid;
     grid-template-columns: 300px 5fr;
-    grid-template-rows: 1fr 6fr;
+    grid-template-rows: 55px 6fr;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     gap: 16px;
 
@@ -100,7 +100,6 @@ input[type=text] {
     cursor: pointer;
 }
 
-
 .sidebar {
     display: flex;
     flex-direction: column;
@@ -110,6 +109,9 @@ input[type=text] {
 
     background-color: #5b21b6;
     border-radius: 16px;
+
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
 }
 
 .sidebar > ul {
@@ -160,11 +162,93 @@ input[type=text] {
 
 .main {
     display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 300px 1fr;
 
     grid-column: 2 / -1;
     grid-row: 2 / -1;
 
     background-color: #a5b4fc;
     border-radius: 16px;
+    padding: 20px;
+    column-gap: 16px;
+    row-gap: 50px;
+    
+}
 
+.main > #projects { 
+    grid-row: 1 / -1;
+    grid-column: 1 / 2;
+
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.main > #projects > h2 {
+    position: relative;
+    grid-column: 1 / -1;
+    width: 100%;
+   
+    margin: 0;
+    border: 0;
+    
+}
+
+.card {
+    background-color: aliceblue;
+    text-align: left;
+    color: black;
+    overflow: hidden;
+    
+    padding: 16px 32px 0 32px;
+    height: 220px;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+.card:hover {
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+  }
+
+.card p {
+    font-size: 14px;
+    height: 100%;
+    width: 100%;
+}
+
+#announcements {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+#trending {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+.right_pages {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.right_pages_headers {
+    margin: 0;
+    border: 0;
+}
+.box {
+    height: 290px;
+    width: 265px;
+    border-radius: 16px;
+    background: #ccc;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.box > ul {
+    padding: 0px 8px 0px 16px;
+    list-style: none;
+    height: 260px;
+    width: 240px;
+    overflow-y: scroll;
+}
+legend {
+    font-weight: bold;
 }
